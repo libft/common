@@ -8,3 +8,8 @@ clean:
 
 .PHONY: fclean
 fclean: clean
+
+.NOTPARALLEL: re
+.PHONY: re
+re: fclean
+	$(MAKE)
